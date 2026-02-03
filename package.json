@@ -1,7 +1,6 @@
 {
   "name": "my-project",
   "homepage": "https://lobstore.github.io/my-project/",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
