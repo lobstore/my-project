@@ -2,10 +2,10 @@ import React, { useState, useEffect, useMemo } from 'react';
 import {Loader2, Info} from 'lucide-react';
 import {fetchUsersData} from './services/api';
 import {getSortValue} from './utils/sorting';
-import UserTable from './components/UserTable';
-import Pagination from './components/Pagination';
+import UserTable from './components/UserTable/UserTable.jsx';
+import Pagination from './components/Pagination/Pagination.jsx';
 import SORT_STATES from './constraints/sortstates';
-import UserModal from './components/UserModal.jsx';
+import UserModal from './components/UserModal/UserModal.jsx';
 import { ITEMS_PER_PAGE } from './constraints/paginationconstraints.js';
 
 const App = () => {
@@ -58,8 +58,7 @@ const App = () => {
       <div className="content-wrapper">
         <header className="header">
           <div className="header-title">
-            <h1>Пользователи системы</h1>
-            <p>Управление списком сотрудников и их данными</p>
+            <h1>Пользователи</h1>
           </div>
           <div className="stats-badge">
             Найдено: <span>{users.length}</span>

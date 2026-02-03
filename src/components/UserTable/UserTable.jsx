@@ -1,6 +1,6 @@
-import UserRow from './UserRow';
-import SortIcon from './SortIcon';
-import { ITEMS_PER_PAGE } from '../constraints/paginationconstraints.js';
+import UserRow from '../UserRow/UserRow.jsx';
+import SortIcon from '../SortIcon/SortIcon.jsx';
+import { ITEMS_PER_PAGE } from '../../constraints/paginationconstraints.js';
 import './usertable.css'
 const UserTable = ({ users, sortConfig, onSort, onUserClick }) => {
   const columns = [
